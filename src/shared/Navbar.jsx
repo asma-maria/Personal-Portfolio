@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="navbar bg-green-100 text-black px-8 md:px-16 lg:px-24">
+        <div className="navbar bg-green-100 shadow-sm text-black px-8 md:px-16 lg:px-20">
             <div className="navbar-start">
 
                 <div className="dropdown">
@@ -61,8 +61,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-               <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full ">Connect Me</button>
+               <NavLink to='/contact' className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full ">Connect Me</NavLink>
                 {/* <a className="btn">Button</a> */}
             </div>
         </div>
