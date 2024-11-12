@@ -13,6 +13,7 @@ const projects = [
     technologies: "MERN Stack",
     image: BooksImage,
     github: "https://github.com/asma-maria/Simple-Book-Shop-Website",
+    LiveURL:"https://simplebookshop.netlify.app/",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const projects = [
     technologies: "MERN Stack",
     image: keymatch,
     github: "https://github.com/asma-maria/Secret-Key-Matcher.git",
+    LiveURL:"https://asma-maria.github.io/Secret-Key-Matcher/",
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ const projects = [
     technologies: "MERN Stack",
     image: HungrySpoon,
     github: "https://github.com/asma-maria/Responsive-Food-Corner",
+    LiveURL:"https://asma-maria.github.io/Responsive-Food-Corner/",
   },
   {
     id: 4,
@@ -34,6 +37,8 @@ const projects = [
     technologies: "MERN Stack",
     image: BooksBucket,
     github: "https://github.com/asma-maria/Books-Bucket-Frontend",
+    LiveURL:"https://books-bucket-frontend.web.app/",
+
   },
   {
     id: 5,
@@ -41,6 +46,7 @@ const projects = [
     technologies: "MERN Stack",
     image: TechHub,
     github: "https://github.com/asma-maria/Course-Related-Website",
+    LiveURL: "https://course-related-website.web.app/",
   },
 ];
 
@@ -57,9 +63,15 @@ const Projects = () => {
               w-full h-48 object-cover" />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
+              <div className="flex justify-between">
               <a href={project.github} className="inline-block bg-gradient-to-r 
               from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
               rel="noopener noreferrer">GitHub</a>
+              
+              <a href={project.LiveURL} className="inline-block bg-gradient-to-r 
+              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+              rel="noopener noreferrer">Live Link</a>
+              </div>
             </div>
           ))}
         </div>
